@@ -918,40 +918,17 @@
           <div class="col-lg-6">
 
             <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>Baliapur Hirak Rd, Vanasthali Colony, Kusum Vihar, Chanakya Nagar, Dhanbad, Jharkhand 826005</p>
+                <div class="wrapper">
+                    <a href="https://www.google.com/maps/place/Butterfly/@23.82168,86.4801643,15z/data=!4m5!3m4!1s0x0:0x7db9e517e2f117b3!8m2!3d23.82168!4d86.4801643">
+                        <img src="assets/img/butterflymap.webp"/>
+                    </a>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+918434066333</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@butterfly.school<br>admission@butterfly.school</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
-                </div>
-              </div>
             </div>
 
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form action="https://formspree.io/f/mvodwolg" method="POST">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -971,10 +948,6 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
 
@@ -991,6 +964,59 @@
 
   </main><!-- End #main -->
 
+    <!--EnquiryModal-->
+    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Admission Enquiry Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="false">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form action="https://formspree.io/f/mgernede" method="POST">
+                    <div class="form-group">
+                    <label>
+                        Your Name:
+                        <input type="text" class="form-control" name="name">
+                    </label>
+                    </div>
+                    <div class="form-group">
+                    <label for="login-email">
+                        Your Email:
+                        <input type="email" class="form-control" name="_replyto">
+                    </label>
+                    </div>
+                    <div class="form-group">
+                    <label>
+                        Your Mobile:
+                        <input type="number" class="form-control" name="mobile">
+                    </label>
+                    </div>
+                    <div class="form-group">
+                    <label>
+                        Your Enquiry:
+                        <textarea name="message" class="form-control"></textarea>
+                    </label>
+                    </div>
+                    <!-- your other form fields go here -->
+
+                        <div class="modal-footer">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit">Submit</button>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>  
+    <!--EnquiryModal-->
+  
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
